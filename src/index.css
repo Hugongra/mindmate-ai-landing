@@ -8,35 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* MindMate AI Design System - Calming & Therapeutic Colors */
+    --background: 252 100% 99%;
+    --foreground: 235 16% 23%;
 
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 235 16% 23%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 235 16% 23%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Soft lavender primary */
+    --primary: 268 61% 67%;
+    --primary-foreground: 0 0% 100%;
+    
+    /* Gentle secondary */
+    --secondary: 252 100% 97%;
+    --secondary-foreground: 235 16% 23%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Muted pastels */
+    --muted: 252 50% 95%;
+    --muted-foreground: 235 8% 55%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
-
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Pale blue accent */
+    --accent: 208 100% 94%;
+    --accent-foreground: 212 45% 45%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 252 30% 92%;
+    --input: 252 30% 92%;
+    --ring: 268 61% 67%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+    
+    /* Custom gradients for MindMate */
+    --gradient-hero: linear-gradient(135deg, hsl(268 61% 67% / 0.1) 0%, hsl(208 100% 94% / 0.3) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(0 0% 100%) 0%, hsl(252 100% 98%) 100%);
+    --gradient-cta: linear-gradient(135deg, hsl(268 61% 67%) 0%, hsl(268 61% 75%) 100%);
+    
+    /* Shadows */
+    --shadow-soft: 0 4px 24px hsl(268 61% 67% / 0.08);
+    --shadow-card: 0 8px 32px hsl(268 61% 67% / 0.12);
+    
+    /* Transitions */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     --sidebar-background: 0 0% 98%;
 
