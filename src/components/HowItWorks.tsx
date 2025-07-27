@@ -1,6 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { UserCheck, MessageCircle, TrendingUp, Lightbulb, Users, Calendar } from "lucide-react";
-import big5TraitsImage from "@/assets/big5-traits-spanish.jpg";
 
 const HowItWorks = () => {
   const steps = [
@@ -67,7 +66,7 @@ const HowItWorks = () => {
             </div>
             <div className="relative">
               <img 
-                src={big5TraitsImage} 
+                src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=500&h=300&fit=crop"
                 alt="Los 5 rasgos del Big Five: Apertura, Responsabilidad, Extroversión, Amabilidad, Neuroticismo"
                 className="w-full rounded-xl shadow-lg"
               />
