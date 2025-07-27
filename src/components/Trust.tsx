@@ -5,27 +5,27 @@ const Trust = () => {
   const trustItems = [
     {
       icon: Users,
-      title: "Expert Team",
-      description: "Built by AI engineers, licensed therapists, and cognitive scientists with decades of combined experience.",
-      details: ["PhD-level AI researchers", "Licensed clinical psychologists", "Cognitive behavioral therapy specialists"]
+      title: "Equipo de Expertos",
+      description: "Construido por ingenieros de IA, terapeutas licenciados y científicos cognitivos con décadas de experiencia combinada.",
+      details: ["Investigadores de IA nivel PhD", "Psicólogos clínicos licenciados", "Especialistas en terapia cognitivo-conductual"]
     },
     {
       icon: Lock,
-      title: "Privacy First",
-      description: "Your conversations are encrypted end-to-end. We never sell your data or share it with third parties.",
-      details: ["Bank-level encryption", "HIPAA-compliant infrastructure", "Your data never leaves secure servers"]
+      title: "Privacidad Primero",
+      description: "Tus conversaciones están encriptadas de extremo a extremo. Nunca vendemos tus datos ni los compartimos con terceros.",
+      details: ["Encriptación nivel bancario", "Infraestructura compatible con HIPAA", "Tus datos nunca salen de servidores seguros"]
     },
     {
       icon: Award,
-      title: "Evidence-Based",
-      description: "Our AI is trained on proven therapeutic approaches including CBT, DBT, and mindfulness techniques.",
-      details: ["Peer-reviewed research", "Clinical validation studies", "Continuous improvement protocols"]
+      title: "Basado en Evidencia",
+      description: "Nuestra IA está entrenada en enfoques terapéuticos probados incluyendo TCC, TDC y técnicas de mindfulness.",
+      details: ["Investigación revisada por pares", "Estudios de validación clínica", "Protocolos de mejora continua"]
     },
     {
       icon: Heart,
-      title: "Human Oversight",
-      description: "Licensed therapists monitor AI interactions and provide crisis intervention when needed.",
-      details: ["24/7 human backup support", "Licensed professional oversight", "Seamless escalation protocols"]
+      title: "Supervisión Humana",
+      description: "Terapeutas licenciados monitorean las interacciones de IA y proporcionan intervención en crisis cuando es necesario.",
+      details: ["Soporte humano de respaldo 24/7", "Supervisión profesional licenciada", "Protocolos de escalamiento fluidos"]
     }
   ];
 
@@ -34,10 +34,10 @@ const Trust = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Built with trust and expertise
+            Construido con confianza y experiencia
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Your mental health deserves the highest standards of care, privacy, and professional oversight.
+            Tu salud mental merece los más altos estándares de cuidado, privacidad y supervisión profesional.
           </p>
         </div>
         
@@ -76,23 +76,23 @@ const Trust = () => {
           <div className="grid md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-primary mb-2">500K+</div>
-              <p className="text-muted-foreground">Conversations facilitated</p>
+              <p className="text-muted-foreground">Conversaciones facilitadas</p>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">95%</div>
-              <p className="text-muted-foreground">User satisfaction rate</p>
+              <p className="text-muted-foreground">Tasa de satisfacción del usuario</p>
             </div>
             <div>
               <div className="text-3xl font-bold text-primary mb-2">24/7</div>
-              <p className="text-muted-foreground">Professional monitoring</p>
+              <p className="text-muted-foreground">Monitoreo profesional</p>
             </div>
           </div>
         </div>
         
         <div className="text-center mt-12">
           <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            MindMate AI is not a replacement for professional therapy in crisis situations. 
-            If you're having thoughts of self-harm, please contact emergency services or a crisis hotline immediately.
+            MindMate AI no es un reemplazo para la terapia profesional en situaciones de crisis. 
+            Si tienes pensamientos de autolesión, por favor contacta servicios de emergencia o una línea de crisis inmediatamente.
           </p>
         </div>
       </div>

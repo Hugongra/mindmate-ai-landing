@@ -5,38 +5,38 @@ const Features = () => {
   const features = [
     {
       icon: MessageSquare,
-      title: "Real-time Conversations",
-      description: "Chat with your AI therapist instantly via text. Get immediate support whenever you need it.",
+      title: "Conversaciones en Tiempo Real",
+      description: "Chatea con tu terapeuta de IA instantáneamente por texto. Obtén apoyo inmediato cuando lo necesites.",
       gradient: "from-primary/20 to-primary/5"
     },
     {
       icon: Mic,
-      title: "Voice Therapy Sessions",
-      description: "Talk naturally with advanced voice AI that understands emotions and responds with empathy.",
+      title: "Sesiones de Terapia por Voz",
+      description: "Habla naturalmente con IA de voz avanzada que entiende emociones y responde con empatía.",
       gradient: "from-accent-foreground/20 to-accent-foreground/5"
     },
     {
       icon: BarChart3,
-      title: "Mood Tracking",
-      description: "Daily mood check-ins and journaling help you understand patterns and track your progress.",
+      title: "Seguimiento del Estado de Ánimo",
+      description: "Chequeos diarios del estado de ánimo y diario te ayudan a entender patrones y rastrear tu progreso.",
       gradient: "from-primary/20 to-primary/5"
     },
     {
       icon: Users,
-      title: "Customizable AI Avatars",
-      description: "Choose an AI personality that matches your preferences for the most comfortable experience.",
+      title: "Avatares de IA Personalizables",
+      description: "Elige una personalidad de IA que coincida con tus preferencias para la experiencia más cómoda.",
       gradient: "from-accent-foreground/20 to-accent-foreground/5"
     },
     {
       icon: Shield,
-      title: "Psychological Safety",
-      description: "Built-in safety protocols ensure you're always protected with professional oversight.",
+      title: "Seguridad Psicológica",
+      description: "Protocolos de seguridad integrados aseguran que siempre estés protegido con supervisión profesional.",
       gradient: "from-primary/20 to-primary/5"
     },
     {
       icon: Phone,
-      title: "Crisis Support",
-      description: "Immediate redirection to suicide hotlines and human therapists when you need urgent help.",
+      title: "Apoyo en Crisis",
+      description: "Redirección inmediata a líneas de ayuda para suicidio y terapeutas humanos cuando necesites ayuda urgente.",
       gradient: "from-accent-foreground/20 to-accent-foreground/5"
     }
   ];
@@ -46,10 +46,10 @@ const Features = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
-            Everything you need for better mental health
+            Todo lo que necesitas para una mejor salud mental
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Powerful features designed to support your journey to emotional wellbeing
+            Funciones poderosas diseñadas para apoyar tu viaje hacia el bienestar emocional
           </p>
         </div>
         
@@ -76,10 +76,10 @@ const Features = () => {
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-primary/5 to-accent/10 rounded-2xl p-8 border border-primary/10">
             <h3 className="text-xl font-semibold text-foreground mb-2">
-              Available 24/7
+              Disponible 24/7
             </h3>
             <p className="text-muted-foreground">
-              Your AI therapist never sleeps. Get support whenever you need it, day or night.
+              Tu terapeuta de IA nunca duerme. Obtén apoyo cuando lo necesites, día o noche.
             </p>
           </div>
         </div>

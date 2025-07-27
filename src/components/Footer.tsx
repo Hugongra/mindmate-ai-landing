@@ -9,22 +9,22 @@ const Footer = () => {
         <div className="mb-16">
           <Heart className="w-16 h-16 mx-auto text-primary mb-6" />
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
-            It's okay to start here.
+            Está bien empezar aquí.
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto leading-relaxed">
-            Taking the first step toward better mental health takes courage. 
-            Start with a simple conversation. You don't have to do this alone.
+            Dar el primer paso hacia una mejor salud mental requiere valor. 
+            Empieza con una conversación simple. No tienes que hacer esto solo.
           </p>
           
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300 px-8 py-6 text-lg font-semibold rounded-xl mb-4"
           >
-            Try It Now – No Signup Needed
+            Pruébalo Ahora – Sin Registro Necesario
           </Button>
           
           <p className="text-sm text-muted-foreground">
-            Start talking in under 30 seconds
+            Empieza a hablar en menos de 30 segundos
           </p>
         </div>
         
