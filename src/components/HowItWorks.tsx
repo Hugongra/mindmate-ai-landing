@@ -66,7 +66,7 @@ const HowItWorks = () => {
             </div>
             <div className="relative">
               <img 
-                src="https://images.unsplash.com/photo-1581090464777-f3220bbe1b8b?w=500&h=300&fit=crop"
+                src="/lovable-uploads/73bc1bb1-3dd5-4dc8-92de-dca0197861ed.png"
                 alt="Los 5 rasgos del Big Five: Apertura, Responsabilidad, Extroversión, Amabilidad, Neuroticismo"
                 className="w-full rounded-xl shadow-lg"
               />
