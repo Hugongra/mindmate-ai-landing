@@ -20,7 +20,7 @@ const Pricing = () => {
           <Card className="border-primary/20 bg-gradient-to-br from-card to-card/80 hover:shadow-lg transition-all duration-300">
             <CardHeader className="text-center pb-8">
               <CardTitle className="text-2xl font-bold text-foreground mb-2">Gratuito</CardTitle>
-              <div className="text-4xl font-bold text-primary mb-2">$0</div>
+              <div className="text-4xl font-bold text-primary mb-2">0€</div>
               <p className="text-muted-foreground">Empieza con apoyo básico</p>
             </CardHeader>
             <CardContent className="space-y-4">
@@ -58,7 +58,7 @@ const Pricing = () => {
             
             <CardHeader className="text-center pb-8">
               <CardTitle className="text-2xl font-bold text-foreground mb-2">Premium</CardTitle>
-              <div className="text-4xl font-bold text-primary mb-2">$29</div>
+              <div className="text-4xl font-bold text-primary mb-2">15€</div>
               <p className="text-muted-foreground">por mes</p>
             </CardHeader>
             <CardContent className="space-y-4">
