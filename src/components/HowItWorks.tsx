@@ -54,8 +54,13 @@ const HowItWorks = () => {
                     {index + 1}
                   </div>
                 </div>
-                <CardTitle className="text-lg font-semibold text-foreground">
+                <CardTitle className="text-lg font-semibold text-foreground flex items-center justify-center gap-2">
                   {step.title}
+                  {(step.title === "Rastrea tu Progreso" || step.title === "Obtén Insights") && (
+                    <span className="text-xs bg-orange-500 text-white px-2 py-1 rounded-full">
+                      pronto
+                    </span>
+                  )}
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
