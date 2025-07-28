@@ -17,19 +17,18 @@ const Hero = () => {
           alt="Peaceful AI therapy environment"
           className="w-full h-full object-cover opacity-20"
         />
-        {/* Rotating brain overlay */}
+        {/* Central brain rotation */}
         <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-64 h-64 animate-brain-rotate">
-            <img 
-              src={heroImage} 
-              alt="Brain"
-              className="w-full h-full object-contain opacity-40"
-              style={{ 
-                clipPath: 'circle(30% at 50% 50%)',
-                filter: 'brightness(1.2) contrast(1.1)'
-              }}
-            />
-          </div>
+          <div 
+            className="w-32 h-32 rounded-full animate-brain-rotate"
+            style={{
+              background: `url(${heroImage}) center/cover`,
+              backgroundSize: '400% 400%',
+              backgroundPosition: '50% 45%',
+              opacity: 0.6,
+              filter: 'brightness(1.3) contrast(1.2)'
+            }}
+          />
         </div>
       </div>
       
