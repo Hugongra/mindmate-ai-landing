@@ -44,7 +44,7 @@ const HowItWorks = () => {
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, index) => (
-            <Card key={index} className="relative overflow-hidden group hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-card to-card/80">
+            <Card key={index} className="relative overflow-hidden group hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-muted to-muted/90 border-muted-foreground/20">
               <CardHeader className="text-center pb-4">
                 <div className="relative">
                   {(steps[index].title === "Rastrea tu Progreso" || steps[index].title === "Obtén Insights") && (
