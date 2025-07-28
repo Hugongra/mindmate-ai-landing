@@ -15,6 +15,9 @@ import ContactPage from "./pages/Contact";
 import CommunityPage from "./pages/Community";
 import AboutPage from "./pages/About";
 import PrivacyPolicyPage from "./pages/PrivacyPolicy";
+import TermsOfServicePage from "./pages/TermsOfService";
+import CookiePolicyPage from "./pages/CookiePolicy";
+import HipaaCompliancePage from "./pages/HipaaCompliance";
 
 const queryClient = new QueryClient();
 
@@ -36,6 +39,9 @@ const App = () => (
           <Route path="/community" element={<CommunityPage />} />
           <Route path="/about" element={<AboutPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
+          <Route path="/terms-of-service" element={<TermsOfServicePage />} />
+          <Route path="/cookie-policy" element={<CookiePolicyPage />} />
+          <Route path="/hipaa-compliance" element={<HipaaCompliancePage />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>

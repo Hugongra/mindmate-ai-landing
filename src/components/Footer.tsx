@@ -45,17 +45,17 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold text-foreground mb-3 sm:mb-4 text-sm sm:text-base">Support</h3>
               <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">Help Center</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Crisis Resources</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Contact Us</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Community</a></li>
+                <li><Link to="/help-center" className="hover:text-primary transition-colors">Help Center</Link></li>
+                <li><Link to="/crisis-resources" className="hover:text-primary transition-colors">Crisis Resources</Link></li>
+                <li><Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link></li>
+                <li><Link to="/community" className="hover:text-primary transition-colors">Community</Link></li>
               </ul>
             </div>
             
             <div>
               <h3 className="font-semibold text-foreground mb-3 sm:mb-4 text-sm sm:text-base">Company</h3>
               <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">About Us</a></li>
+                <li><Link to="/about" className="hover:text-primary transition-colors">About Us</Link></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Our Team</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Research</a></li>
                 <li><a href="#" className="hover:text-primary transition-colors">Careers</a></li>
@@ -65,10 +65,10 @@ const Footer = () => {
             <div>
               <h3 className="font-semibold text-foreground mb-3 sm:mb-4 text-sm sm:text-base">Legal</h3>
               <ul className="space-y-1.5 sm:space-y-2 text-xs sm:text-sm text-muted-foreground">
-                <li><a href="#" className="hover:text-primary transition-colors">Privacy Policy</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Terms of Service</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">Cookie Policy</a></li>
-                <li><a href="#" className="hover:text-primary transition-colors">HIPAA Compliance</a></li>
+                <li><Link to="/privacy-policy" className="hover:text-primary transition-colors">Privacy Policy</Link></li>
+                <li><Link to="/terms-of-service" className="hover:text-primary transition-colors">Terms of Service</Link></li>
+                <li><Link to="/cookie-policy" className="hover:text-primary transition-colors">Cookie Policy</Link></li>
+                <li><Link to="/hipaa-compliance" className="hover:text-primary transition-colors">HIPAA Compliance</Link></li>
               </ul>
             </div>
           </div>
