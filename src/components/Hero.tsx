@@ -41,8 +41,9 @@ const Hero = () => {
             variant="outline" 
             size="lg"
             className="border-primary/30 text-primary hover:bg-primary/5 px-8 py-6 text-lg font-medium rounded-xl"
+            asChild
           >
-            Cómo Funciona
+            <a href="#how-it-works">Cómo Funciona</a>
           </Button>
         </div>
         
