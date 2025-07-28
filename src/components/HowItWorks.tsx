@@ -47,6 +47,13 @@ const HowItWorks = () => {
             <Card key={index} className="relative overflow-hidden group hover:shadow-lg transition-all duration-300 bg-gradient-to-br from-card to-card/80">
               <CardHeader className="text-center pb-4">
                 <div className="relative">
+                  {(steps[index].title === "Rastrea tu Progreso" || steps[index].title === "Obtén Insights") && (
+                    <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
+                      <span className="text-xs bg-orange-700 text-white px-3 py-1 rounded-full font-medium">
+                        pronto
+                      </span>
+                    </div>
+                  )}
                   <div className="w-16 h-16 mx-auto bg-gradient-to-br from-primary/20 to-accent/20 rounded-full flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <step.icon className={`w-8 h-8 ${step.color}`} />
                   </div>
@@ -54,13 +61,8 @@ const HowItWorks = () => {
                     {index + 1}
                   </div>
                 </div>
-                <CardTitle className="text-lg font-semibold text-foreground flex items-center justify-center gap-2">
+                <CardTitle className="text-lg font-semibold text-foreground">
                   {step.title}
-                  {(step.title === "Rastrea tu Progreso" || step.title === "Obtén Insights") && (
-                    <span className="text-xs bg-orange-500 text-white px-2 py-1 rounded-full">
-                      pronto
-                    </span>
-                  )}
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-center">
