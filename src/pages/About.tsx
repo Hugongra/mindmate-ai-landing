@@ -77,6 +77,81 @@ const AboutPage = () => {
               </CardContent>
             </Card>
           </div>
+
+          {/* Team Section */}
+          <div className="mt-20">
+            <h2 className="text-3xl md:text-4xl font-bold text-foreground text-center mb-16">
+              Nuestro Equipo
+            </h2>
+            
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+              {/* Hugo González */}
+              <Card className="text-center border-primary/10 bg-gradient-to-br from-card to-secondary/30 p-6">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary/20 to-secondary/30 flex items-center justify-center">
+                  <div className="text-4xl font-bold text-primary">HG</div>
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-2">Hugo González</h3>
+                <p className="text-primary font-semibold mb-4">Founder & CEO</p>
+                <div className="text-left space-y-3">
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Formación:</strong> BSc Computer Science & Business Analytics
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Consultor estratégico y ingeniero de software con experiencia en consultoría tecnológica estratégica en Accenture para uno de los bancos más grandes del mundo y el banco líder en España.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Participó en el desarrollo de pruebas de concepto de algoritmos de minería donde construyó herramientas para reducir el costo computacional de los algoritmos de descifrado.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Actualmente cursando un doble grado en Ingeniería de Software y Business Analytics.
+                  </p>
+                </div>
+              </Card>
+
+              {/* Javier Rius */}
+              <Card className="text-center border-primary/10 bg-gradient-to-br from-card to-secondary/30 p-6">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary/20 to-secondary/30 flex items-center justify-center">
+                  <div className="text-4xl font-bold text-primary">JR</div>
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-2">Javier Rius</h3>
+                <p className="text-primary font-semibold mb-4">Founder & CTO</p>
+                <div className="text-left space-y-3">
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Formación:</strong> BEng Telecommunications Engineering y MSc en Ciberseguridad
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Ingeniero de software senior con más de 5 años de experiencia en varias empresas, especializado en frameworks Spring y Angular.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Posee un título en Ingeniería de Telecomunicaciones de la Universidad Politécnica de Valencia y un máster en Ciberseguridad e Inteligencia Cibernética.
+                  </p>
+                </div>
+              </Card>
+
+              {/* Uzziel Perez */}
+              <Card className="text-center border-primary/10 bg-gradient-to-br from-card to-secondary/30 p-6">
+                <div className="w-32 h-32 mx-auto mb-6 rounded-full bg-gradient-to-br from-primary/20 to-secondary/30 flex items-center justify-center">
+                  <div className="text-4xl font-bold text-primary">UP</div>
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-2">Uzziel Perez</h3>
+                <p className="text-primary font-semibold mb-4">Founding Engineer (Próximamente)</p>
+                <div className="text-left space-y-3">
+                  <p className="text-sm text-muted-foreground">
+                    <strong>Formación:</strong> PhD en Física e Investigador de IA
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Ex-ingeniero de software del CERN y físico investigador con PhD en Física de la Universidad de Alabama.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Actualmente investigador postdoctoral en el experimento LHCb en La Sapienza, con especialización en física de partículas.
+                  </p>
+                  <p className="text-sm text-muted-foreground">
+                    Ha desarrollado software científico en el CERN y tiene experiencia en educación STEAM a través de su trabajo en The Mind Museum.
+                  </p>
+                </div>
+              </Card>
+            </div>
+          </div>
         </div>
       </main>
     </div>
