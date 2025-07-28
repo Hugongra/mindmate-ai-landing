@@ -10,12 +10,6 @@ const Trust = () => {
       details: ["Investigadores de IA nivel PhD", "Psicólogos clínicos licenciados", "Especialistas en terapia cognitivo-conductual"]
     },
     {
-      icon: Lock,
-      title: "Privacidad Primero",
-      description: "Tus conversaciones están encriptadas de extremo a extremo. Nunca vendemos tus datos ni los compartimos con terceros.",
-      details: ["Encriptación nivel bancario", "Infraestructura compatible con HIPAA", "Tus datos nunca salen de servidores seguros"]
-    },
-    {
       icon: Award,
       title: "Basado en Evidencia",
       description: "Nuestra IA está entrenada en enfoques terapéuticos probados incluyendo TCC, TDC y técnicas de mindfulness.",
