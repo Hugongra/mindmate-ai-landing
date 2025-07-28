@@ -17,7 +17,7 @@ const ProblemSolution = () => {
         </div>
         
         {/* Problem Cards */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16">
           <Card className="border-destructive/20 bg-gradient-to-br from-background to-destructive/5">
             <CardHeader className="text-center">
               <DollarSign className="w-12 h-12 mx-auto text-destructive mb-2" />
@@ -51,12 +51,12 @@ const ProblemSolution = () => {
         
         {/* Solution */}
         <div className="text-center">
-          <div className="bg-gradient-to-r from-primary/10 to-accent/20 rounded-3xl p-8 md:p-12">
-            <Heart className="w-16 h-16 mx-auto text-primary mb-6" />
-            <h3 className="text-2xl md:text-3xl font-bold text-foreground mb-4">
+          <div className="bg-gradient-to-r from-primary/10 to-accent/20 rounded-2xl sm:rounded-3xl p-6 sm:p-8 md:p-12">
+            <Heart className="w-12 h-12 sm:w-16 sm:h-16 mx-auto text-primary mb-4 sm:mb-6" />
+            <h3 className="text-xl sm:text-2xl md:text-3xl font-bold text-foreground mb-3 sm:mb-4">
               MindMate AI lo cambia todo
             </h3>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg text-muted-foreground max-w-2xl mx-auto leading-relaxed">
               Tu terapeuta de IA siempre disponible y libre de juicios. Habla en cualquier momento, en cualquier lugar. 
               Empieza a sanar hoy con el apoyo que mereces, cuando más lo necesites.
             </p>

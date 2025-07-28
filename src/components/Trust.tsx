@@ -41,7 +41,7 @@ const Trust = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 mb-16">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 sm:gap-8 mb-12 sm:mb-16">
           {trustItems.map((item, index) => (
             <Card key={index} className="border-primary/10 bg-gradient-to-br from-card to-secondary/30 hover:shadow-lg transition-all duration-300">
               <CardHeader className="pb-4">
@@ -72,8 +72,8 @@ const Trust = () => {
         </div>
         
         {/* Certifications & Stats */}
-        <div className="bg-gradient-to-r from-primary/5 to-accent/10 rounded-2xl p-8 border border-primary/10">
-          <div className="grid md:grid-cols-2 gap-8 text-center">
+        <div className="bg-gradient-to-r from-primary/5 to-accent/10 rounded-xl sm:rounded-2xl p-6 sm:p-8 border border-primary/10">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 sm:gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-primary mb-2">95%</div>
               <p className="text-muted-foreground">Tasa de satisfacción del usuario</p>

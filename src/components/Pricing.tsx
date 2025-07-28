@@ -15,7 +15,7 @@ const Pricing = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 max-w-6xl mx-auto">
           {/* Free Plan */}
           <Card className="border-primary/20 bg-gradient-to-br from-card to-card/80 hover:shadow-lg transition-all duration-300">
             <CardHeader className="text-center pb-8">
@@ -43,7 +43,7 @@ const Pricing = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-8 bg-gradient-to-r from-primary/80 to-primary hover:from-primary hover:to-primary/90 text-primary-foreground">
+              <Button className="w-full mt-6 sm:mt-8 bg-gradient-to-r from-primary/80 to-primary hover:from-primary hover:to-primary/90 text-primary-foreground text-sm sm:text-base">
                 Empezar Gratis
               </Button>
             </CardContent>
@@ -89,7 +89,7 @@ const Pricing = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-8 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button className="w-full mt-6 sm:mt-8 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base">
                 Iniciar Prueba Gratuita de 7 Días
               </Button>
             </CardContent>
@@ -139,7 +139,7 @@ const Pricing = () => {
                 </div>
               </div>
               
-              <Button className="w-full mt-8 bg-gradient-to-r from-accent to-accent/80 hover:from-accent/90 hover:to-accent/70 text-white shadow-lg hover:shadow-xl transition-all duration-300">
+              <Button className="w-full mt-6 sm:mt-8 bg-gradient-to-r from-accent to-accent/80 hover:from-accent/90 hover:to-accent/70 text-white shadow-lg hover:shadow-xl transition-all duration-300 text-sm sm:text-base">
                 Suscribirse Anual
               </Button>
             </CardContent>

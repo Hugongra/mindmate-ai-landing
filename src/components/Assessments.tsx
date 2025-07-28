@@ -216,21 +216,21 @@ const Assessments = () => {
         </div>
 
         <Tabs defaultValue="personality" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 lg:grid-cols-5 mb-8">
+          <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 mb-8 h-auto">
             {testCategories.map((category) => (
-              <TabsTrigger key={category.id} value={category.id} className="text-xs sm:text-sm">
-                <category.icon className="w-4 h-4 mr-2" />
-                {category.title}
+              <TabsTrigger key={category.id} value={category.id} className="text-xs sm:text-sm p-3 sm:p-2 flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
+                <category.icon className="w-4 h-4" />
+                <span className="text-center sm:text-left">{category.title}</span>
               </TabsTrigger>
             ))}
           </TabsList>
 
           {testCategories.map((category) => (
             <TabsContent key={category.id} value={category.id}>
-              <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6">
                 {category.tests.map((test) => (
                   <Card key={test.id} className="relative overflow-hidden group hover:shadow-lg transition-all duration-300">
-                    <CardHeader className="pb-4">
+                    <CardHeader className="pb-3 sm:pb-4">
                       <div className="flex items-start justify-between mb-2">
                         <div className={`w-12 h-12 rounded-lg ${category.bgColor} flex items-center justify-center`}>
                           <category.icon className={`w-6 h-6 ${category.color}`} />
@@ -239,15 +239,15 @@ const Assessments = () => {
                           <CheckCircle className="w-5 h-5 text-primary" />
                         )}
                       </div>
-                      <CardTitle className="text-lg font-semibold text-foreground mb-2">
+                      <CardTitle className="text-base sm:text-lg font-semibold text-foreground mb-2">
                         {test.title}
                       </CardTitle>
-                      <Badge variant="secondary" className="w-fit">
+                      <Badge variant="secondary" className="w-fit text-xs">
                         {test.type}
                       </Badge>
                     </CardHeader>
-                    <CardContent className="space-y-4">
-                      <p className="text-muted-foreground text-sm leading-relaxed">
+                    <CardContent className="space-y-3 sm:space-y-4 px-4 sm:px-6">
+                      <p className="text-muted-foreground text-xs sm:text-sm leading-relaxed">
                         {test.description}
                       </p>
                       
@@ -264,7 +264,7 @@ const Assessments = () => {
 
                       <Button 
                         onClick={() => handleStartTest(test.id)}
-                        className="w-full"
+                        className="w-full text-sm sm:text-base"
                         variant={isTestCompleted(test.id) ? "outline" : "default"}
                       >
                         {isTestCompleted(test.id) ? "Ver Resultados" : "Comenzar Test"}
@@ -277,36 +277,36 @@ const Assessments = () => {
           ))}
         </Tabs>
 
-        <div className="mt-16 text-center">
-          <div className="bg-gradient-to-br from-primary/5 to-accent/10 rounded-3xl p-8 border border-primary/10">
-            <h3 className="text-2xl font-bold text-foreground mb-4">
+        <div className="mt-12 sm:mt-16 text-center">
+          <div className="bg-gradient-to-br from-primary/5 to-accent/10 rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-primary/10">
+            <h3 className="text-xl sm:text-2xl font-bold text-foreground mb-4">
               ¿Por qué realizar estas evaluaciones?
             </h3>
-            <div className="grid md:grid-cols-3 gap-6 mt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 mt-6 sm:mt-8">
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                  <Brain className="w-8 h-8 text-primary" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto bg-primary/20 rounded-full flex items-center justify-center mb-3 sm:mb-4">
+                  <Brain className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                 </div>
-                <h4 className="font-semibold text-foreground mb-2">Autoconocimiento</h4>
-                <p className="text-sm text-muted-foreground">
+                <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Autoconocimiento</h4>
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   Comprende mejor tu personalidad, fortalezas y áreas de mejora
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                  <Lightbulb className="w-8 h-8 text-primary" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto bg-primary/20 rounded-full flex items-center justify-center mb-3 sm:mb-4">
+                  <Lightbulb className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                 </div>
-                <h4 className="font-semibold text-foreground mb-2">Insights Personalizados</h4>
-                <p className="text-sm text-muted-foreground">
+                <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Insights Personalizados</h4>
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   Recibe recomendaciones específicas basadas en tus resultados
                 </p>
               </div>
               <div className="text-center">
-                <div className="w-16 h-16 mx-auto bg-primary/20 rounded-full flex items-center justify-center mb-4">
-                  <TrendingUp className="w-8 h-8 text-primary" />
+                <div className="w-12 h-12 sm:w-16 sm:h-16 mx-auto bg-primary/20 rounded-full flex items-center justify-center mb-3 sm:mb-4">
+                  <TrendingUp className="w-6 h-6 sm:w-8 sm:h-8 text-primary" />
                 </div>
-                <h4 className="font-semibold text-foreground mb-2">Seguimiento del Progreso</h4>
-                <p className="text-sm text-muted-foreground">
+                <h4 className="font-semibold text-foreground mb-2 text-sm sm:text-base">Seguimiento del Progreso</h4>
+                <p className="text-xs sm:text-sm text-muted-foreground">
                   Monitorea tu evolución y bienestar a lo largo del tiempo
                 </p>
               </div>
