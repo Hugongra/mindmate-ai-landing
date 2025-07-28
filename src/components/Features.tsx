@@ -1,5 +1,5 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { MessageSquare, Mic, Users, Shield, Phone, BarChart3 } from "lucide-react";
+import { MessageSquare, Mic, Users, BarChart3, Eye } from "lucide-react";
 
 const Features = () => {
   const features = [
@@ -28,16 +28,10 @@ const Features = () => {
       gradient: "from-accent-foreground/20 to-accent-foreground/5"
     },
     {
-      icon: Shield,
-      title: "Seguridad Psicológica",
-      description: "Protocolos de seguridad integrados aseguran que siempre estés protegido con supervisión profesional.",
+      icon: Eye,
+      title: "Detección de Emociones por Visión",
+      description: "Análisis avanzado de emociones mediante visión por computadora para un seguimiento más preciso de tu estado emocional.",
       gradient: "from-primary/20 to-primary/5"
-    },
-    {
-      icon: Phone,
-      title: "Apoyo en Crisis",
-      description: "Redirección inmediata a líneas de ayuda para suicidio y terapeutas humanos cuando necesites ayuda urgente.",
-      gradient: "from-accent-foreground/20 to-accent-foreground/5"
     }
   ];
 
