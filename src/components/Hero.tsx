@@ -1,5 +1,4 @@
 import { Button } from "@/components/ui/button";
-import { Brain } from "lucide-react";
 import heroImage from "@/assets/hero-mindmate.jpg";
 
 const Hero = () => {
@@ -18,24 +17,6 @@ const Hero = () => {
           alt="Peaceful AI therapy environment"
           className="w-full h-full object-cover opacity-20"
         />
-        {/* Glowing Brain Icon */}
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="relative">
-            {/* Glow effect */}
-            <div className="absolute inset-0 flex items-center justify-center">
-              <Brain 
-                size={120} 
-                className="text-primary opacity-20 blur-xl scale-150"
-              />
-            </div>
-            {/* Main brain icon */}
-            <Brain 
-              size={80} 
-              className="text-primary opacity-60 drop-shadow-2xl" 
-              style={{ filter: 'drop-shadow(0 0 30px hsl(var(--primary) / 0.5))' }}
-            />
-          </div>
-        </div>
       </div>
       
       {/* Content */}
