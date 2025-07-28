@@ -73,11 +73,7 @@ const Trust = () => {
         
         {/* Certifications & Stats */}
         <div className="bg-gradient-to-r from-primary/5 to-accent/10 rounded-2xl p-8 border border-primary/10">
-          <div className="grid md:grid-cols-3 gap-8 text-center">
-            <div>
-              <div className="text-3xl font-bold text-primary mb-2">500K+</div>
-              <p className="text-muted-foreground">Conversaciones facilitadas</p>
-            </div>
+          <div className="grid md:grid-cols-2 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-primary mb-2">95%</div>
               <p className="text-muted-foreground">Tasa de satisfacción del usuario</p>
@@ -89,12 +85,6 @@ const Trust = () => {
           </div>
         </div>
         
-        <div className="text-center mt-12">
-          <p className="text-sm text-muted-foreground max-w-2xl mx-auto">
-            MindMate AI no es un reemplazo para la terapia profesional en situaciones de crisis. 
-            Si tienes pensamientos de autolesión, por favor contacta servicios de emergencia o una línea de crisis inmediatamente.
-          </p>
-        </div>
       </div>
     </section>
   );
