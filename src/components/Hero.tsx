@@ -15,7 +15,7 @@ const Hero = () => {
         <img 
           src={heroImage} 
           alt="Peaceful AI therapy environment"
-          className="w-full h-full object-cover opacity-20"
+          className="w-full h-full object-cover opacity-20 animate-pulse"
         />
       </div>
       
