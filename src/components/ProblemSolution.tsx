@@ -24,7 +24,7 @@ const ProblemSolution = () => {
               <CardTitle className="text-destructive">Muy Costoso</CardTitle>
             </CardHeader>
             <CardContent className="text-center">
-              <p className="text-muted-foreground">$100-200 por sesión pone la terapia fuera del alcance de muchos</p>
+              <p className="text-muted-foreground">50-150 euros por sesión pone la terapia fuera del alcance de muchos</p>
             </CardContent>
           </Card>
           
