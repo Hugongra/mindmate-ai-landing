@@ -13,7 +13,7 @@ import HelpCenterPage from "./pages/HelpCenter";
 import CrisisResourcesPage from "./pages/CrisisResources";
 import ContactPage from "./pages/Contact";
 import CommunityPage from "./pages/Community";
-import AboutPage from "./pages/About";
+import OurTeamPage from "./pages/OurTeam";
 import PrivacyPolicyPage from "./pages/PrivacyPolicy";
 import TermsOfServicePage from "./pages/TermsOfService";
 import CookiePolicyPage from "./pages/CookiePolicy";
@@ -37,7 +37,7 @@ const App = () => (
           <Route path="/crisis-resources" element={<CrisisResourcesPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="/community" element={<CommunityPage />} />
-          <Route path="/about" element={<AboutPage />} />
+          <Route path="/our-team" element={<OurTeamPage />} />
           <Route path="/privacy-policy" element={<PrivacyPolicyPage />} />
           <Route path="/terms-of-service" element={<TermsOfServicePage />} />
           <Route path="/cookie-policy" element={<CookiePolicyPage />} />
