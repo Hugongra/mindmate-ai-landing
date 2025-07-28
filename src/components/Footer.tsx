@@ -81,8 +81,8 @@ const Footer = () => {
             <div className="text-xs sm:text-sm text-muted-foreground text-center md:text-right">
               <p>© 2024 MindMate AI. All rights reserved.</p>
               <p className="mt-1">
-                If you're in crisis, call 
-                <a href="tel:988" className="text-primary hover:underline ml-1">988 (Suicide & Crisis Lifeline)</a>
+                Si estás en crisis, llama al 
+                <a href="tel:024" className="text-primary hover:underline ml-1">024</a>
               </p>
             </div>
           </div>

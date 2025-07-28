@@ -78,12 +78,6 @@ const Trust = () => {
             </div>
           </div>
         </div>
-        
-        <div className="text-center mt-12">
-          <p className="text-sm text-muted-foreground">
-            Si estás en crisis, llama al 024
-          </p>
-        </div>
       </div>
     </section>
   );
