@@ -15,7 +15,7 @@ const Pricing = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {/* Free Plan */}
           <Card className="border-primary/20 bg-gradient-to-br from-card to-card/80 hover:shadow-lg transition-all duration-300">
             <CardHeader className="text-center pb-8">
@@ -91,6 +91,56 @@ const Pricing = () => {
               
               <Button className="w-full mt-8 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300">
                 Iniciar Prueba Gratuita de 7 Días
+              </Button>
+            </CardContent>
+          </Card>
+          
+          {/* Annual Plan */}
+          <Card className="border-accent bg-gradient-to-br from-accent/10 to-primary/5 hover:shadow-xl transition-all duration-300 relative overflow-hidden">
+            <div className="absolute top-0 right-0 bg-gradient-to-l from-accent to-accent/80 text-white px-4 py-1 text-sm font-medium rounded-bl-lg">
+              15% OFF
+            </div>
+            
+            <CardHeader className="text-center pb-8">
+              <CardTitle className="text-2xl font-bold text-foreground mb-2">Premium Anual</CardTitle>
+              <div className="text-4xl font-bold text-primary mb-2">153€</div>
+              <p className="text-muted-foreground">por año</p>
+              <p className="text-sm text-accent font-medium">12.75€/mes equivalente</p>
+            </CardHeader>
+            <CardContent className="space-y-4">
+              <div className="space-y-3">
+                <div className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium">Conversaciones ilimitadas de IA</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium">Sesiones de terapia por voz</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium">Análisis avanzado del estado de ánimo</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium">Insights personalizados</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium">Personalidades de IA personalizadas</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-primary flex-shrink-0" />
+                  <span className="text-foreground font-medium">Soporte prioritario</span>
+                </div>
+                <div className="flex items-center gap-3">
+                  <Check className="w-5 h-5 text-accent flex-shrink-0" />
+                  <span className="text-foreground font-medium">2 meses gratis incluidos</span>
+                </div>
+              </div>
+              
+              <Button className="w-full mt-8 bg-gradient-to-r from-accent to-accent/80 hover:from-accent/90 hover:to-accent/70 text-white shadow-lg hover:shadow-xl transition-all duration-300">
+                Suscribirse Anual
               </Button>
             </CardContent>
           </Card>
