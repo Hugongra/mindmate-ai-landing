@@ -41,38 +41,6 @@ const HowItWorks = () => {
           </p>
         </div>
         
-        {/* Big Five Test Section */}
-        <div className="mb-16 bg-gradient-to-br from-primary/5 to-accent/10 rounded-3xl p-8 border border-primary/10">
-          <div className="grid lg:grid-cols-2 gap-8 items-center">
-            <div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">
-                Test Big Five de Personalidad
-              </h3>
-              <p className="text-muted-foreground mb-6 leading-relaxed">
-                Utilizamos el modelo Big Five, el test de personalidad más usado clínicamente a nivel mundial. 
-                Este evalúa cinco dimensiones fundamentales de tu personalidad para personalizar completamente 
-                tu experiencia terapéutica.
-              </p>
-              <div className="grid grid-cols-2 gap-4 text-sm">
-                <div className="flex items-center gap-2">
-                  <Users className="w-4 h-4 text-primary" />
-                  <span className="text-muted-foreground">Edad y género</span>
-                </div>
-                <div className="flex items-center gap-2">
-                  <Calendar className="w-4 h-4 text-primary" />
-                  <span className="text-muted-foreground">5 minutos</span>
-                </div>
-              </div>
-            </div>
-            <div className="relative">
-              <img 
-                src="/lovable-uploads/73bc1bb1-3dd5-4dc8-92de-dca0197861ed.png"
-                alt="Los 5 rasgos del Big Five: Apertura, Responsabilidad, Extroversión, Amabilidad, Neuroticismo"
-                className="w-full rounded-xl shadow-lg"
-              />
-            </div>
-          </div>
-        </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
           {steps.map((step, index) => (
