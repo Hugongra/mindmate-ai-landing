@@ -49,8 +49,17 @@ const Features = () => {
         
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
           {features.map((feature, index) => (
-            <Card key={index} className={`group hover:shadow-xl transition-all duration-300 border-primary/10 bg-gradient-to-br ${feature.gradient} hover:-translate-y-1`}>
+            <Card key={index} className={`group hover:shadow-xl transition-all duration-300 border-primary/10 bg-gradient-to-br ${feature.gradient} hover:-translate-y-1 relative ${
+              index !== 0 ? "blur-[1px] opacity-75" : ""
+            }`}>
               <CardHeader className="text-center pb-3 sm:pb-4">
+                {index !== 0 && (
+                  <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 z-10">
+                    <span className="text-xs bg-orange-700 text-white px-3 py-1 rounded-full font-medium">
+                      pronto
+                    </span>
+                  </div>
+                )}
                 <div className="w-12 h-12 sm:w-14 sm:h-14 mx-auto bg-white rounded-xl sm:rounded-2xl flex items-center justify-center mb-3 sm:mb-4 shadow-md group-hover:shadow-lg transition-shadow duration-300">
                   <feature.icon className="w-6 h-6 sm:w-7 sm:h-7 text-primary" />
                 </div>
