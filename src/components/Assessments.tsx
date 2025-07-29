@@ -138,47 +138,6 @@ const Assessments = () => {
         }
       ]
     },
-    {
-      id: "computer-vision",
-      title: "Análisis Visual y Emocional",
-      icon: Camera,
-      color: "text-violet-600",
-      bgColor: "bg-violet-100",
-      tests: [
-        {
-          id: "emotion-detection",
-          title: "Análisis de Emociones Facial",
-          description: "Detecta y analiza emociones a través de expresiones faciales en tiempo real",
-          duration: "2-3 min",
-          questions: "Análisis visual",
-          type: "Emociones"
-        },
-        {
-          id: "micro-expressions",
-          title: "Microexpresiones",
-          description: "Analiza microexpresiones sutiles que revelan estados emocionales profundos",
-          duration: "3-5 min",
-          questions: "Análisis visual",
-          type: "Microexpresiones"
-        },
-        {
-          id: "stress-visual",
-          title: "Indicadores Visuales de Estrés",
-          description: "Detecta signos visuales de estrés y fatiga a través de la cámara",
-          duration: "2-4 min",
-          questions: "Análisis visual",
-          type: "Estrés Visual"
-        },
-        {
-          id: "wellbeing-tracking",
-          title: "Seguimiento de Bienestar Visual",
-          description: "Monitorea cambios en tu bienestar a través del análisis visual diario",
-          duration: "1-2 min",
-          questions: "Análisis visual",
-          type: "Bienestar"
-        }
-      ]
-    }
   ];
 
   const handleStartTest = (testId: string) => {
@@ -216,7 +175,7 @@ const Assessments = () => {
         </div>
 
         <Tabs defaultValue="personality" className="w-full">
-          <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 mb-8 h-auto">
+          <TabsList className="grid w-full grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 mb-8 h-auto">
             {testCategories.map((category) => (
               <TabsTrigger key={category.id} value={category.id} className="text-xs sm:text-sm p-3 sm:p-2 flex flex-col sm:flex-row items-center gap-1 sm:gap-2">
                 <category.icon className="w-4 h-4" />
