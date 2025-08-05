@@ -3,13 +3,16 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Input } from "@/components/ui/input";
-import { MessageCircle, User, Send, Brain } from "lucide-react";
+import { MessageCircle, User, Send, Brain, Loader2 } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
 
 const AppPage = () => {
+  const { toast } = useToast();
   const [messages, setMessages] = useState([
     { id: 1, text: "¡Hola! Soy tu terapeuta con IA. ¿Cómo te sientes hoy?", sender: "bot" }
   ]);
   const [newMessage, setNewMessage] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
 
   const personalityQuestions = [
     {
@@ -29,19 +32,66 @@ const AppPage = () => {
     }
   ];
 
-  const handleSendMessage = () => {
-    if (newMessage.trim()) {
-      setMessages([...messages, { id: Date.now(), text: newMessage, sender: "user" }]);
+  const handleSendMessage = async () => {
+    if (newMessage.trim() && !isLoading) {
+      const userMessage = newMessage;
       setNewMessage("");
-      
-      // Simulamos respuesta del bot después de un delay
-      setTimeout(() => {
-        setMessages(prev => [...prev, { 
+      setIsLoading(true);
+
+      // Añadir mensaje del usuario
+      const newUserMessage = { id: Date.now(), text: userMessage, sender: "user" };
+      setMessages(prev => [...prev, newUserMessage]);
+
+      try {
+        // Preparar historial de mensajes para contexto
+        const messageHistory = messages.map(msg => ({
+          role: msg.sender === "user" ? "user" : "assistant",
+          content: msg.text
+        }));
+
+        const response = await fetch('/functions/v1/chat', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            message: userMessage,
+            messages: messageHistory
+          }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Error en la respuesta del servidor');
+        }
+
+        const data = await response.json();
+        
+        // Añadir respuesta del bot
+        const botMessage = { 
           id: Date.now() + 1, 
-          text: "Entiendo cómo te sientes. ¿Puedes contarme más sobre eso?", 
+          text: data.message, 
           sender: "bot" 
-        }]);
-      }, 1000);
+        };
+        setMessages(prev => [...prev, botMessage]);
+
+      } catch (error) {
+        console.error('Error:', error);
+        toast({
+          title: "Error",
+          description: "No pude conectar con el terapeuta IA. Por favor, intenta de nuevo.",
+          variant: "destructive",
+        });
+        
+        // Respuesta de fallback
+        const fallbackMessage = { 
+          id: Date.now() + 1, 
+          text: "Lo siento, tengo problemas técnicos en este momento. ¿Puedes intentar de nuevo?", 
+          sender: "bot" 
+        };
+        setMessages(prev => [...prev, fallbackMessage]);
+      } finally {
+        setIsLoading(false);
+      }
     }
   };
 
@@ -113,11 +163,16 @@ const AppPage = () => {
                       placeholder="Escribe tu mensaje..."
                       value={newMessage}
                       onChange={(e) => setNewMessage(e.target.value)}
-                      onKeyPress={(e) => e.key === "Enter" && handleSendMessage()}
+                      onKeyPress={(e) => e.key === "Enter" && !isLoading && handleSendMessage()}
                       className="flex-1"
+                      disabled={isLoading}
                     />
-                    <Button onClick={handleSendMessage}>
-                      <Send className="w-4 h-4" />
+                    <Button onClick={handleSendMessage} disabled={isLoading}>
+                      {isLoading ? (
+                        <Loader2 className="w-4 h-4 animate-spin" />
+                      ) : (
+                        <Send className="w-4 h-4" />
+                      )}
                     </Button>
                   </div>
                 </div>
