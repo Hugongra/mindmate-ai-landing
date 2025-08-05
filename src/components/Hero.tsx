@@ -33,8 +33,9 @@ const Hero = () => {
           <Button 
             size="lg" 
             className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary/70 text-primary-foreground shadow-lg hover:shadow-xl transition-all duration-300 px-6 sm:px-8 py-4 sm:py-6 text-base sm:text-lg font-semibold rounded-xl w-full sm:w-auto"
+            asChild
           >
-            Iniciar Sesión Gratuita
+            <a href="/app">Pruébalo Ahora</a>
           </Button>
           
           <Button 
